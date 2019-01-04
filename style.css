@@ -1,0 +1,34 @@
+header p:last-child{
+    padding-bottom: 1.5em;
+    max-width: 500px;
+    border-bottom: 3px solid black;
+    margin: 0 auto;
+}
+
+a:link, a:visited{
+    color: black;
+}
+
+main{
+    text-align: center;
+}
+
+#search{
+    background-color: gray;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+#search-box{
+    width: 255px;
+    border: none;
+    background: gray;
+}
+
+#search-box::placeholder{
+    color:black;
+}
+
+#units{
+    width: 150px;
+}

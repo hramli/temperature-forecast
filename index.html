@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperature</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="container text-center my-4">
+        <h1>Temperature Forecast</h1>
+        <p>Check the current temperature at any location</p>
+        <p>Powered by OpenWeatherMap</p>
+    </header>
+    <main>
+        <div class="col-auto px-4 py-2 mb-3" id="search">
+            <input type="text" id="search-box" placeholder="City/City,Country/Zip Code/City ID">
+            <a href="#">
+                <i class="fas fa-search-location" id="search-button"></i>
+            </a>
+        </div>
+        <div>
+            <select class="custom-select" name="units" id="units">
+                <option value="1">Celsius</option>
+                <option value="2">Fahrenheit</option>
+                <option value="3">Kelvin</option>
+            </select>
+        </div>
+
+        <div class="container mt-4 " id="weather-data">
+            <h2 id="weather-location"></h2>
+            <p id="response"></p>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./ajaxapp.js"></script>
+</body>
+</html>

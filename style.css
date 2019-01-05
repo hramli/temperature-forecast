@@ -1,0 +1,71 @@
+header{
+    margin-top: 2em;
+}
+header p:last-child{
+    padding-bottom: 1.5em;
+    max-width: 500px;
+    border-bottom: 3px solid black;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #F0EFEF;
+    display: table;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.inner-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+#logo{
+   font-size: 200px;
+   color: #78C0CE;
+}
+
+a:link, a:visited{
+    color: black;
+}
+
+main{
+    text-align: center;
+}
+
+#search{
+    background-color: #F0EFEF;
+    display: inline-block;
+    border-radius: 20px;
+    border: 2px solid #78C0CE;
+}
+
+#search-box{
+    width: 255px;
+    border: none;
+    background: #F0EFEF;
+    text-align: center;
+}
+
+#search-box:focus{
+    outline: 0;
+}
+
+#search-box::placeholder{
+    color:gray;
+    text-align: center;
+}
+
+#search-button:hover{
+    color: #78C0CE;
+}
+
+select.custom-select{
+    background-color: #78C0CE;
+
+}
+
+#units{
+    width: 150px;
+}
